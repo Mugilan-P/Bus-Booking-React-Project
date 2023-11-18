@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import First from './components/componentsPractice';
+import "./App.css"
+// import List from './components/list';
+// import Parent from './components/context';
+// import Navigation from './components/navbar';
+// import SignInSide from './components/loginformproject';
+import Register from "./components/registerproject";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <First/>
+      <List/>
+      <Parent/>
+      <Navigation/> */}
+      {/* <SignInSide/> */}
+      <Register/>
+    </>
   );
 }
 
