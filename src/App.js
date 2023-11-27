@@ -1,20 +1,32 @@
-// import First from './components/componentsPractice';
-import "./App.css"
-// import List from './components/list';
-// import Parent from './components/context';
-// import Navigation from './components/navbar';
-// import SignInSide from './components/loginformproject';
-import Register from "./components/registerproject";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Booking from "./Project/bookingpage";
+import Home from "./Project/homepage";
+import Login from "./Project/loginformproject";
+import Navigation from "./Project/navbar";
+import Register from "./Project/registerproject";
+
+import { Toaster } from "sonner";
+import ContactForm from "./Project/contactus";
+import Profile from "./Project/profilepage";
+
 function App() {
   return (
-    <>
-      {/* <First/>
-      <List/>
-      <Parent/>
-      <Navigation/> */}
-      {/* <SignInSide/> */}
-      <Register/>
-    </>
+    // <Album/>
+    // <Login/>
+    <BrowserRouter>
+      <Navigation />
+      <Toaster richColors />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/contactus" element={<ContactForm />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,33 @@
+.img_content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr ;
+    margin-left: 15%;
+
+}
+/* .bus_img{
+    background-image: url("https://t3.ftcdn.net/jpg/04/91/24/24/360_F_491242470_WdSpwKRMYiHqTvRBRpsH72cM4g1VWL22.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 100vh;
+     width:100%;
+
+} */
+img{
+    height: 240px;
+   width:280px;
+}
+.social a {
+    padding: 0 .5em;
+    color: black;
+  }
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+  }
